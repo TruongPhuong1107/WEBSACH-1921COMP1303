@@ -1,0 +1,113 @@
+#myContainer {
+    border: 1px solid #264F73;
+    min-height: 600px;
+    color: #ffffff;
+    padding: 0px
+}
+#mybanner {
+    height: 80px;
+    position: relative;
+    background-color: #EFF4F5
+}
+#mybanner a {
+    text-decoration: none;
+}
+#menunav1 li {
+    float: left;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+#menunav1 ul {    
+    list-style-type: none;
+    overflow: hidden;
+    width: 100%;
+}
+#menunav1 a {
+    color: black;
+    font-size: 18;
+}
+#Namebook {
+    color: #BE2623;
+    font-size: 45;
+    left: 70px;
+    position: absolute;
+} 
+p {
+    width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    -webkit-line-clamp: 7;
+    height: 175px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+#nnp {
+    color: #264F73;
+    font-size: 60;
+}
+
+#menunav {
+    background-color: #264F73;
+    height: 50px;
+    padding: 10px;
+}
+
+#menunav ul {
+    list-style-type: none;
+    overflow: hidden;
+    width: 100%;
+}
+#menunav a {
+    color: #ffffff;
+}
+input {
+    width: 400px;
+    box-sizing: border-box;
+    border: 1px solid #264F73;
+    outline: none;
+    padding: 12px 14px;
+    height: 33px;
+    color: #264F73;
+    background-color: #EFF4F5;
+}
+#iconSearch {
+    color: #264F73;
+    background-color: #EFF4F5;
+}
+.cart{
+    position: absolute;
+     top: 10px;
+     right: 10px;
+    
+}
+#trống{
+    float: left;
+    background-color: #EFF4F5;
+}
+
+#trống{
+    color:#264F73;
+}
+#trống li a{
+    color:#264F73;
+    text-decoration: none;
+}
+#discription{
+    color: black;
+}
+.button{
+    width: 110px;
+    height: 35px;
+    background-color: #BE2623;
+    color: white;
+    border-radius: 4px;
+    font-size: 19px;
+}
+#rong{
+    height: 375px;
+}
+#main{
+    padding: 25px;
+}

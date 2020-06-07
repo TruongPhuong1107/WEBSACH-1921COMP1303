@@ -1,0 +1,116 @@
+<html>
+    <head>
+    </head>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/Description.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <body>
+        <div class="container" id="myContainer">
+            <header id="mybanner" class="clearfix">
+                <div class="cart">
+                    <a href="#"  >
+                        <i class="fa fa-shopping-cart " style="color: black;" ></i>
+                    </a>
+                </div> 
+                <div id="menunav1" class="clearfix" >
+                    <nav class="float-right">
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Logout</a></li>
+                            <li><a href="#">Register</a></li>
+                        </ul>
+                    </nav>
+                <h2 id="Namebook"><span id="nnp">NNP</span>BOOK</h2>                        
+                </div>
+            
+                </header>
+                <div id="menunav" class="clearfix" >
+                    <nav id="menu" class="float-left">
+                        <ul>
+                            <li><a href="#">Danh mục sách </a></li>
+                        </ul>
+                    </nav>
+                    <form style="text-align: center;">
+                        <input type="text" name="Search" placeholder="Tìm kiếm tựa sách, tác giả... ">
+                        <button id="iconSearch" class="icon"><i class="icon"></i>Search</button>
+                    </form>
+                </span>
+                </div>
+                
+           <div class="clearfix" id="main">
+           
+            <div class="row" >
+                <div class="col-xl-2 col-lg-2 col-md-4 col-12 bg-light"> 
+                    <div id="trống" class="cottrong">
+                        <ul>
+                            <li><a href="#">Sách bán chạy</a></li>
+                            <li><a href="#">Sách mới phát hành</a></li>
+                            <li><a href="#">Combo ưu đãi</a></li>
+                            <a>THỂ LOẠI</a>
+                            <li><a href="#">Truyện tranh</a></li>
+                            <li><a href="#">Tiểu thuyết</a></li>
+                            <li><a href="#">Tản văn</a></li>
+                            <li><a href="#">Báo chí</a></li>
+        
+                            <a></a>
+        
+                        </ul>  
+                           
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-12"> 
+                    <img  id="rong" src="../images/rong.jpg" alt="rong" >
+                 </div>
+                <div  id="discription" class=" col-xl-6 col-lg-6 col-md-4 col-12  ">      
+                   
+                    <h3>
+                        Rồng Kokosnuss Phiêu Lưu Kí - Giải Cứu Vương Quốc Trong Chai
+                    </h3>
+                <p>
+                    Có một vương quốc rộng lớn thu gọn trong chiếc chai bé xíu, có ai tưởng tượng được không? Kokosnuss và những người bạn rất nóng lòng được khám phá vùng đất kì diệu ấy. Nhưng lại có bao nhiêu tai họa ập đến, Kokosnuss thậm chí còn bị bắt giam trong nhà ngục tăm tối. Và bọn họ đang gánh trên vai trọng trách vô cùng cao cả là giải cứu toàn bộ vương quốc trong chai thoát khỏi sự cai trị của tên phù thủy tà ác Ziegenbart...
+                </p>
+                <h4>Giá bán</h4>
+                    <span>42.000đ</span>
+                    <span>
+                        <del>
+                            50.000đ
+                        </del>
+                    </span> 
+                <br> 
+                    <button type="button" class="button"> Mua ngay</button>
+                </br> <br>
+                <div class="single-social-area">
+                    <h3>Share this on</h3>
+                    <a href="#">
+                        <i class="fa fa-facebook" ></i>
+                    </a> 
+                    <a href="#">
+                        <i class="fa fa-google-plus" ></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-feed" ></i>
+                    </a> 
+                    <a href="#">
+                        <i class="fa fa-twitter" ></i>
+                    </a> 
+                </div>
+             </div>
+            </div>  
+            </div>            
+
+        </div>    
+        <script src="../js/jquery-3.5.0.js"></script>
+    <script src="../js/bootstrap.js"></script>
+        <script>
+        $(document).ready(function(){
+            $("li a").hover(function(){
+    $(this).css("color", "blue");
+    }, function(){
+    $(this).css("color", "black");
+  });
+});
+        </script>
+
+    </body>
+</html>

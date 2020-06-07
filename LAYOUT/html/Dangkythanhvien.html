@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <title>Register</title>
+    </head>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/LayoutSach.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <body>
+        <div class="container" id="myContainer">
+            <header id="mybanner" class="clearfix">
+                <div class="cart">
+                    <a href="#"  >
+                        <i class="fa fa-shopping-cart " style="color: black;" ></i>
+                    </a>
+                </div> 
+                <div id="menunav1" class="clearfix" >
+                    <nav class="float-right">
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Logout</a></li>
+                            <li><a href="#">Register</a></li>
+                        </ul>
+                    </nav>
+                <h2 id="Namebook"><span id="nnp">NNP</span>BOOK</h2>                        
+                </div>
+                </header>
+
+                <div id="menunav" class="clearfix" >
+                    <nav class="float-left">
+                        <ul>
+                            <li><a href="#">Danh mục sách </a></li>
+                            <li></li>
+                        </ul>
+                    </nav>
+    
+                    <form>
+                        <input type="text" name="Search" placeholder="Tìm kiếm tựa sách, tác giả... ">
+                        <button id="iconSearch" class="icon"><i class="icon"></i>Search</button>
+                    </form>
+                </div>
+                
+                <style>
+                
+                    #ten{
+                        text-align: left;    
+                        color: #264F73;
+                        font-size: 30px;
+                    }
+                    #gioitinh {
+                        color:#264F73;
+                        border:#264F73 solid 1px;
+                        border-radius: 5px;
+                        padding: 5px;
+                        background-color: #EFF4F5
+                    }
+                    .table{
+                        margin: 0 auto; 
+                    } 
+                    .myname{
+                        width: 300px;   
+                        color:black;    
+                        background-color: white;
+                        padding: 5px;            
+                        border-radius: 5px;
+                        background-color: #EFF4F5
+                    }
+                    .myname2{
+                        width: 100px;   
+                        color:white;    
+                        background-color:#264F73;
+                        border-radius: 5px;
+                    }
+                    td{
+                        color:#264F73;
+                        font-size: 14px;
+                    }
+                    td:nth-child(odd){
+                        text-align: left;
+                    }
+                    .login-form{
+                        text-align:center;
+                        max-width: 650px;
+                        margin: 20px auto;
+                        background-color: white;
+                        padding: 30px;
+                        border: 1.5px solid #264F73;
+                        border-radius: 8px;
+                    }
+                </style>
+                <body>
+                    <br> 
+                    <div class="login-form">
+                        <h2 id=ten>Đăng kí tài khoản NNPBOOK</h2>
+                    <br>
+                    <form method="POST" enctype="multipart/form-data" > 
+                        <table>
+                            <tr>
+                                <td>Họ tên:</td>
+                                <td>
+                                    <input class="myname" type="text" name="hoten" required maxlength="50" placeholder="Họ tên">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tên đăng nhập:</td>
+                                <td>
+                                    <input class="myname" type="text" name="tendangnhap" required maxlength="25" placeholder="Tên đăng nhập">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mật khẩu:</td>
+                                <td>
+                                    <input class="myname" type="password" name="matkhau">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nhập lại mật khẩu:</td>
+                                <td>
+                                    <input class="myname" type="password" name="nhaplaimk">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td>
+                                    <input class="myname" type="text" name="email" required maxlength="25" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Số điện thoại:</td>
+                                <td>
+                                    <input class="myname" type="text" name="SĐT" required maxlength="25">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Giới tính:</td>
+                                <td>
+                                    <select name="gioitinh" id="gioitinh">
+                                        <option value="0">Nam</option>
+                                        <option value="1">Nu</option>
+                                    </select> 
+                                </td>
+                            </tr>
+            
+                        </table>
+                        <br>
+                        <td colspan="2" style="text-align: center;">
+                            <button class="myname2" type="submit">Đăng kí</button>
+                            <button class="myname2" type="reset">Nhập lại</button>
+                        </td>
+                    </div>
+                    </form>
+                </body>
+                </body>
+            </div>  
+        </div>    
+
+    </body>
+</html>
