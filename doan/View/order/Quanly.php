@@ -40,4 +40,3 @@ echo "</td></tr>";
 
 </div>
 <!-- /article -->
-<hr class="noscreen">
