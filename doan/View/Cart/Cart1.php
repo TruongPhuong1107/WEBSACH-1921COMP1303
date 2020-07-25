@@ -55,7 +55,7 @@
                         <tr> 
             
                             <td colspan="2" class="hidden-xs"> </td> 
-                            <td class="hidden-xs text-center" style="font-size: 17px;"><strong>Tổng tiền: <?php echo $sum?> đ</strong> </td> 
+                            <td></td> 
                             <td>
 							<td colspan="2" class="hidden-xs"> </td> 
                             <td class="hidden-xs text-center" style="font-size: 17px;"><strong>Tổng tiền: <?php echo $sum?> đ</strong> </td> 
