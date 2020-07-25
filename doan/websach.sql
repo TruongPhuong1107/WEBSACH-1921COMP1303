@@ -1,116 +1,25 @@
-﻿--
--- Table structure for table `loaihoa`
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
 --
+-- Host: 127.0.0.1
+-- Generation Time: Jul 25, 2020 at 04:11 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.6
 
-CREATE TABLE IF NOT EXISTS `loaihoa` (
-  `MaLoai` int(11) NOT NULL,
-  `TenLoai` varchar(50) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
 
---
--- Dumping data for table `loaihoa`
---
 
-INSERT INTO `loaihoa` (`MaLoai`, `TenLoai`) VALUES
-(1, 'Hoa tình yêu'),
-(2, 'Hoa cưới'),
-(3, 'Hoa sinh nhật'),
-(4, 'Hoa văn phòng'),
-(5, 'Hoa tươi bó'),
-(6, 'Hoa tươi giỏ'),
-(7, 'Hoa khai trương');
-
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
--- Table structure for table `hoa`
+-- Database: `websach`
 --
-
-CREATE TABLE IF NOT EXISTS `hoa` (
-  `MaHoa` int(11) NOT NULL,
-  `MaLoai` int(11) NOT NULL,
-  `TenHoa` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `GiaBan` int(11) NOT NULL,
-  `ThanhPhan` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
-  `Hinh` varchar(50) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `hoa`
---
-
-INSERT INTO `hoa` (`MaHoa`, `MaLoai`, `TenHoa`, `GiaBan`, `ThanhPhan`, `Hinh`) VALUES
-(1, 1, 'Đón xuân', 50000, 'Hồng xanh dương', 'hh2.jpg'),
-(2, 1, 'Hồn nhiên', 60000, 'Hoa giỏ', 'hh3.jpg'),
-(3, 1, 'Tím thuỷ chung', 45000, 'Hoa lan bó', 'hh4.jpg'),
-(4, 1, 'Nét duyên tím', 40000, 'Hoa hồng màu tím nhạt', 'hh5.jpg'),
-(5, 1, 'Cùng khoe sắc', 70000, 'Hoa hồng các màu', 'hh6.jpg'),
-(6, 1, 'Trắng thơ ngây', 65000, 'Hồng nhung', 'hh7.jpg'),
-(7, 2, 'Dây tơ hồng', 250000, 'Hoa hồng màu hồng đậm', 'hc1.jpg'),
-(8, 2, 'Cầu thuỷ tinh', 220000, 'Hoa hồng xanh dương', 'hc2.jpg'),
-(9, 2, 'Duyên thầm', 260000, 'Hoa cúc trắng, baby,', 'hc3.jpg'),
-(10, 2, 'Đâm chồi nảy lộc', 180000, 'Hoa hồng trắng và cá', 'hc4.jpg'),
-(11, 2, 'Hoà quyện', 270000, 'Hoa hồng trắng, lá t', 'hc5.jpg'),
-(12, 2, 'Nồng nàn', 210000, 'Hoa hồng đỏ, lá thuỷ', 'hc6.jpg'),
-(13, 3, 'Together', 120000, 'Hồng xác pháo, cúc t', 'hoa_sn_dam-me.jpg'),
-(14, 3, 'Long trip', 85000, 'Hoa hồng đỏ, lá kim ', 'hoa_sn_may-man.jpg'),
-(15, 3, 'Beautiful life', 100000, 'Hoa hồng đỏ, lá măng', 'hoa_sn_may-man-2.jpg'),
-(16, 3, 'Morning Sun', 75000, 'Hoa hồng vàng\r\n', 'hoa_sn_nang-diu-dang.jpg'),
-(17, 3, 'Pretty Bloom', 65000, 'Hoa hồng trắng và lá', 'hoa_sn_toa-nang.jpg'),
-(18, 3, 'Red Rose', 45000, 'Hoa hồng đỏ và lá mă', 'hoa_sn_yeu-thuong.jpg'),
-(19, 5, 'Vấn vương', 150000, 'Hoa hồng đỏ, hồng đậ', 'hoa_tuoi_bo_hanh-phuc.jpg'),
-(20, 5, 'Nắng nhẹ nhàng', 50000, 'Hoa cúc xanh, hoa ly', 'hoa_tuoi_bo_ngay-chung-doi.jpg'),
-(21, 5, 'Thanh tao', 120000, 'Hoa thủy tiên, cúa t', 'hoa_tuoi_bo_ngay-moi.jpg'),
-(22, 5, 'Tinh khiết', 110000, 'Hồng trắng và salem\r', 'hoa_tuoi_bo_nong-am.jpg'),
-(23, 5, 'Mùa xuân chín', 150000, 'Hồmg cam, cúc xanh, ', 'hoa_tuoi_bo_sac-thu.jpg'),
-(24, 5, 'Rực rỡ nắng vàng', 75000, 'Hồng vàng và cúc vàn', 'hoa_tuoi_bo_toa-nang.jpg'),
-(25, 3, 'Love Candy', 95000, 'Hoa hồng trắng tinh ', 'hh11.jpg'),
-(26, 2, 'Happy Wedding', 210000, 'Hoa hồng môn và các ', 'hx2.jpg'),
-(27, 1, 'Cúc nhiệt đới', 150000, 'Cúc vàng - hồng cam ', 'hx7.jpg'),
-(28, 1, 'Hoa cúc', 123456, '3253232523', 'hx10.jpg');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `khachhang`
---
-
-CREATE TABLE IF NOT EXISTS `khachhang` (
-  `TenDN` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `MatKhau` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
-  `HoTen` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `DiaChi` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `DienThoai` int(11) DEFAULT NULL,
-  `Email` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `MaKH` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `khachhang`
---
-
-INSERT INTO `khachhang` (`TenDN`, `MatKhau`, `HoTen`, `DiaChi`, `DienThoai`, `Email`, `MaKH`) VALUES
-('admin', 'admin', 'Quản trị Hệ thống', '280 An Dương Vương, P4, Q5', 989366990, 'admin@hoadep.com', 1),
-('hienlth', 'hienlth', 'Lương Trần Hy Hiến', '396 Dương Bá Trạc, Q8', 989366990, 'hienlth@hcmup.edu.vn', 2),
-('cuong', 'cuong', 'Chung Quốc Cường', '1bis Nguyễn Văn Trỗi Q.1', 912345678, 'cqcuong@hcmuns.edu.vn', 3),
-('tung', 'tung', 'Lưu Hải Tùng', '1 Mạc Đỉnh Chi Q.1', 989766569, 'lhtung@yahoo.com', 4),
-('dlthien', 'dlthien', 'Đỗ Lâm Thiên', '357 Lê Hồng Phong Q.10 ', 903123456, 'dlthien@hcmuns.edu.vn', 5),
-('thanh', 'thanh', 'Nguyễn Ngọc Thanh', '357 Lê Hồng Phong Q.10', 903456789, 'lthanh@hcmuns.edu.vn', 6),
-('hoadalat', '123456', 'Hoa Đà Lạt', '123 Hai Bà Trưng', 902314340, 'hoadalat@gmail.com', 7),
-('hoainfo', '123123', 'Shop Hoa', '123 Đà Nẵng', 123213213, 'hoa@hoa.com', 8);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `hoadon`
---
-
-CREATE TABLE IF NOT EXISTS `hoadon` (
-  `MaHD` int(11) NOT NULL,
-  `NgayDat` datetime NOT NULL,
-  `NoiGiao` varchar(11) COLLATE utf8_unicode_ci NOT NULL,
-  `MaKH` int(5) NOT NULL,
-  `TinhTrang` enum('Mới đặt','Đã thanh toán','Đã giao hàng','Hủy đơn hàng') COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -118,29 +27,143 @@ CREATE TABLE IF NOT EXISTS `hoadon` (
 -- Table structure for table `chitiethd`
 --
 
-CREATE TABLE IF NOT EXISTS `chitiethd` (
+CREATE TABLE `chitiethd` (
   `SoDH` int(11) NOT NULL,
-  `MaHoa` int(11) NOT NULL,
+  `MaSach` int(11) NOT NULL,
   `MaHD` int(11) NOT NULL,
   `SoLuong` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
+--
+-- Table structure for table `hoadon`
+--
 
+CREATE TABLE `hoadon` (
+  `MaHD` int(11) NOT NULL,
+  `NgayDat` datetime NOT NULL,
+  `NoiGiao` varchar(11) COLLATE utf8_unicode_ci NOT NULL,
+  `MaSach` int(11) NOT NULL,
+  `SoLuong` int(11) NOT NULL,
+  `TongTien` int(11) NOT NULL,
+  `sdt` varchar(13) COLLATE utf8_unicode_ci NOT NULL,
+  `MaKH` int(11) NOT NULL,
+  `TinhTrang` enum('Mới đặt','Đã thanh toán','Đã giao hàng','Hủy đơn hàng') COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `hoadon`
+--
+
+INSERT INTO `hoadon` (`MaHD`, `NgayDat`, `NoiGiao`, `MaSach`, `SoLuong`, `TongTien`, `sdt`, `MaKH`, `TinhTrang`) VALUES
+(74, '2020-07-24 21:44:25', '280, An Dươ', 7, 1, 50000, '09110011', 3, 'Mới đặt'),
+(76, '2020-07-24 22:57:26', '280, An Dươ', 14, 1, 30000, '09110011', 10, 'Mới đặt'),
+(77, '2020-07-24 23:49:03', '280, An Dươ', 1, 1, 30000, '09110011', 10, 'Mới đặt'),
+(78, '2020-07-25 09:10:36', '280, An Dươ', 10, 3, 750000, '09110011', 10, 'Mới đặt');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `khachhang`
+--
+
+CREATE TABLE `khachhang` (
+  `TenDN` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `MatKhau` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `HoTen` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `DiaChi` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `DienThoai` int(11) DEFAULT NULL,
+  `Email` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `MaKH` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `khachhang`
+--
+
+INSERT INTO `khachhang` (`TenDN`, `MatKhau`, `HoTen`, `DiaChi`, `DienThoai`, `Email`, `MaKH`) VALUES
+('ngan', 'ngan', 'Nguyễn Võ Hiếu Ngân', '1bis Nguyễn Văn Trỗi Q.1', 965421251, 'nganhieunguyenvo@gmail.com', 3),
+('phuong', 'phuong', 'Trương Thị Phương', '1 Mạc Đỉnh Chi Q.1', 989552554, 'truongphuongvt@gmail.com', 4),
+('hanhnguyen', 'hanhnguyen', 'Ngô Hạnh Nguyên', '1 Xô Viết Nghệ Tĩnh, Bình Thạnh', 923154521, 'nhnguyen@gmail.com', 5),
+('NNP', 'NNP', 'NNP', 'An Dương Vương, TP HCM', 123456789, 'nnp@gmail.com', 10),
+('nguyen', 'nguyen', 'Trương Thị Thảo Nguyên', 'Nguyễn Thị Thập, Q.8', 997646112, 'nt4610634@gmail.com', 11);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `loaisach`
+--
+
+CREATE TABLE `loaisach` (
+  `MaLoai` int(11) NOT NULL,
+  `TenLoai` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `loaisach`
+--
+
+INSERT INTO `loaisach` (`MaLoai`, `TenLoai`) VALUES
+(1, 'Truyện tranh'),
+(2, 'Tiểu thuyết'),
+(3, 'Tản văn'),
+(4, 'Báo chí'),
+(12, 'Sách bán chạy'),
+(14, 'Sách mới');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sach`
+--
+
+CREATE TABLE `sach` (
+  `MaSach` int(11) NOT NULL,
+  `MaLoai` int(11) NOT NULL,
+  `TenSach` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `GiaBan` int(11) NOT NULL,
+  `GiamGia` int(11) DEFAULT NULL,
+  `MoTa` varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `TacGia` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `NXB` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `Hinh` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `sach`
+--
+
+INSERT INTO `sach` (`MaSach`, `MaLoai`, `TenSach`, `GiaBan`, `GiamGia`, `MoTa`, `TacGia`, `NXB`, `Hinh`) VALUES
+(1, 1, 'Một Cái Ôm ', 30000, NULL, '\"Bạn có bao giờ cảm thấy cần một cái ôm, một cái ôm thật chặt từ một ai đó ?\r\nBạn xương rồng Felipe nhỏ bé cũng cảm thấy như thế, nhưng gia đình cậu bé lại không thích gần gũi. Bạn biết rồi đấy, cơ thể gia đình đình xương rồng rất nhiều gai nhọn...', 'Simona Ciraolo', 'NXB Phụ Nữ', 'hinh1.jpg'),
+(2, 1, 'Chốn Thần Tiên', 50000, NULL, 'Với những thắc mắc tò mò của bé về cuộc sống thường ngày, với những câu thơ ngắn nhưng cấu tứ rõ ràng, ngôn ngữ đáng yêu, cuốn sách sẽ mang đến cho bé ngoài những bài học đầu đời về cuộc sống này, còn là một thế giới ngôn từ phong phú.', 'Nguyễn Quỳnh Mai', 'NXB Phụ Nữ', 'hinh2.jpg'),
+(3, 1, 'Khu Rừng Trong Thành Phố ', 45000, NULL, 'Sản phẩm bán chạy nhất	Top 100 sản phẩm Truyện Thiếu Nhi bán chạy của tháng\r\nVới những thắc mắc tò mò của bé về cuộc sống thường ngày, với những câu thơ ngắn nhưng cấu tứ rõ ràng, ngôn ngữ đáng yêu, cuốn sách sẽ mang đến cho bé ngoài những bài học đầ', 'Nguyễn Quỳnh Mai', 'NXB Phụ Nữ', 'hinh3.jpg'),
+(4, 2, 'Tin Vào Điều Em Muốn', 55000, NULL, 'Tin Vào Điều Em Muốn. Tôi đang cắt những quả dâu tây chín mọng, nước rỉ dần trên bề mặt ướt lá, thứ nước óng ánh đỏ khiến tôi ngưng lại, nhìn chằm chằm sắc màu đầy mê hoặc đó.&nbsp;', 'Tiểu Châu', 'NXB Văn Học', 'hinh4.jpg'),
+(5, 2, 'Hồ Đồ', 100000, NULL, 'Trên thế giới này, có một loại đàn ông mà nước mắt của cô có rơi bao nhiêu thì cũng không làm rung động được trái tim anh ta, dù cô có là một mỹ nhân khóc đến đổ cả Trường Thành đi chăng nữa thì anh ta cũng chẳng mảy may động lòng.&nbsp;', 'Ngải Tiểu Đồ', 'NXB Văn Học', 'hinh5.jpg'),
+(6, 2, 'Nhà Tiểu Họa', 100000, NULL, 'Một ngày mùa thu năm 1686, cô gái Nella Oortman mười tám tuổi đến Amsterdam để bắt đầu cuộc sống làm vợ của thương gia nổi tiếng Johannes Brandt. Ngôi nhà mới của nàng dù đẹp lộng lẫy nhưng không hề ấm áp.&nbsp;', 'Jessie Burton', 'NXB Thanh Niên', 'hinh6.jpg'),
+(7, 3, 'Sau Những Ngày Mưa', 50000, NULL, 'Câu chuyện nhẹ nhàng da diết và đầy tính nhân văn, trải ra theo giọng kể của một cô gái đi theo đoàn diễn hội chợ. Từ đó, những ký ức được hồi tưởng, gắn kết với quá khứ, hiện tại.&nbsp;', 'Phạm Thu Hà', 'NXB Trẻ', 'hinh7.jpg'),
+(8, 3, 'Người Đi Bán Nắng', 40000, NULL, 'Đôi khi ta tự ví ta như một tài xế taxi, vòng vo đón khách, tài xế và khách cùng chia sẻ cho nhau một phần nho nhỏ cuộc đời, rồi khi khách tìm được bến đỗ của họ, coi như ta đã hoàn thành nhiệm vụ.&nbsp;', 'Minh Mẫn', 'NXB Văn Học', 'hinh8.jpg'),
+(9, 3, 'Thừa Ra Một Người', 45000, NULL, 'Xã hội càng hiện đại càng ngổn ngang hơn. Chiều nào, góc nào, hướng nào cũng thấy ngổn ngang. Sáng mở mắt ra đã ngổn ngang. Ngổn ngang đến khi đi ngủ. Ngổn ngang cả trong mơ. Ngổn ngang phận người. Ngổn ngang chân trời.&nbsp;', 'Văn Thành Lê', 'NXB Trẻ', 'hinh9.jpg'),
+(10, 4, 'Joyful', 250000, NULL, 'A completely original treatment of a completely new and original idea’ Arianna Huffington\r\nFind joy in the space around you\r\nWhen did you last feel joy? Changing your surroundings is the most easily accessible source in finding joy.', 'Ingrid Fetell Lee', 'Ebury Publishing', 'hinh10.jpg'),
+(11, 4, 'The Trending - Xu Hướng', 110000, NULL, 'Trải nghiệm trong ngành thiết kế sáng tạo tại Việt Nam, có một sự thật, Marketing – Design hay Marketer – Designer, dù \'nằm gai nếm mật\' cùng nhau nhưng lại sống trong hai thế giới khác biệt.&nbsp;', 'Rio Creative', 'NXB Lao Động', 'hinh11.jpg'),
+(12, 4, 'Tiktok Marketing', 80000, NULL, 'TikTok đang bùng nổ ở mọi nơi và đã trở thành một trong những ứng dụng được tải xuống nhiều nhất thế giới. Không có gì ngạc nhiên khi các nhà tiếp thị đã bắt đầu nhìn thấy tiềm năng của nền tảng này.&nbsp;', 'Markus Rach', 'NXB Thanh Niên', 'hinh12.jpg'),
+(13, 12, 'Giáo Dục Não Phải - Tương Lai Cho Con Bạn', 60000, NULL, 'Người Việt Nam chúng ta thường tự hào rằng mình là một dân tộc thông minh. Thật khó để chứng minh theo lý thuyết thống kê và bằng các tiêu chí chặt chẽ, vững chắc rằng một dân tộc thông minh hơn những dân tộc khác.&nbsp;', 'Viện Giáo Dục Shichida Vi', 'NXB Thế Giới', 'hinh13.jpg'),
+(14, 12, '7 Bước Đệm Dẫn Đến Thành Công', 30000, NULL, 'Có rất nhiều con đường đi tới thành công, nhưng con đường nào giúp chúng ta đi đến thành công ngắn nhất đó điều mà chúng ta cần quan tâm. Nhiều người đã chọn những cách bước đi khác nhau.', 'Nguyễn Duy Nguyên', 'NXB Lao Động', 'hinh14.jpg'),
+(15, 14, 'Learning English With Jino - Các Loài Động Vật', 20000, NULL, 'Bộ sách Học tiếng Anh cùng Jino là những câu chuyện kể về chú rồng nhỏ Jino và những tình huống xảy ra trong cuộc sống hằng ngày, được viết dưới dạng song ngữ giúp các em nhỏ học từ vựng tiếng Anh một cách thích thú và hiệu quả hơn.', 'Apiradee Midomaru', 'NXB Thanh Niên', 'hinh155.jpg'),
+(16, 14, 'Learning English With Jino - Cầu Vồng Trái Cây', 20000, NULL, 'Bộ sách Học tiếng Anh cùng Jino là những câu chuyện kể về chú rồng nhỏ Jino và những tình huống xảy ra trong cuộc sống hằng ngày, được viết dưới dạng song ngữ giúp các em nhỏ học từ vựng tiếng Anh một cách thích thú và hiệu quả hơn.', 'Apiradee Midomaru', 'NXB Thanh Niên', 'hinh16.jpg'),
+(17, 14, 'Có Một Ngày, Bố Mẹ Sẽ Già Đi', 80000, NULL, 'Càng lớn lên, những quyến luyến của chúng ta đối với bố mẹ càng ít. Khi đại bàng non có thể giương cánh, nó luôn hướng tới không trung, chứ không phải rúc vào đôi cánh bố mẹ.', 'Nhiều Tác Giả', 'NXB Thế Giới', 'hinh17.jpg');
+
+--
+-- Indexes for dumped tables
+--
 
 --
 -- Indexes for table `chitiethd`
 --
 ALTER TABLE `chitiethd`
-  ADD PRIMARY KEY (`SoDH`);
-
---
--- Indexes for table `hoa`
---
-ALTER TABLE `hoa`
-  ADD PRIMARY KEY (`MaHoa`),
-  ADD KEY `maLoai` (`MaLoai`);
+  ADD PRIMARY KEY (`SoDH`),
+  ADD KEY `fk_chitiethd_sach` (`MaSach`),
+  ADD KEY `fk_chitiethd_hoadon` (`MaHD`);
 
 --
 -- Indexes for table `hoadon`
@@ -156,31 +179,46 @@ ALTER TABLE `khachhang`
   ADD PRIMARY KEY (`MaKH`);
 
 --
--- Indexes for table `loaihoa`
+-- Indexes for table `loaisach`
 --
 ALTER TABLE `loaisach`
   ADD PRIMARY KEY (`MaLoai`);
 
 --
--- AUTO_INCREMENT for table `hoa`
+-- Indexes for table `sach`
 --
-ALTER TABLE `hoa`
-  MODIFY `MaHoa` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=29;
+ALTER TABLE `sach`
+  ADD PRIMARY KEY (`MaSach`),
+  ADD KEY `maLoai` (`MaLoai`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
 --
 -- AUTO_INCREMENT for table `hoadon`
 --
 ALTER TABLE `hoadon`
-  MODIFY `MaHD` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `MaHD` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
+
 --
 -- AUTO_INCREMENT for table `khachhang`
 --
 ALTER TABLE `khachhang`
-  MODIFY `MaKH` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+  MODIFY `MaKH` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
 --
--- AUTO_INCREMENT for table `loaihoa`
+-- AUTO_INCREMENT for table `loaisach`
 --
-ALTER TABLE `loaihoa`
-  MODIFY `MaLoai` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+ALTER TABLE `loaisach`
+  MODIFY `MaLoai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT for table `sach`
+--
+ALTER TABLE `sach`
+  MODIFY `MaSach` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+
 --
 -- Constraints for dumped tables
 --
@@ -189,14 +227,8 @@ ALTER TABLE `loaihoa`
 -- Constraints for table `chitiethd`
 --
 ALTER TABLE `chitiethd`
-  ADD CONSTRAINT `fk_chitiethd_hoa` FOREIGN KEY (`MaHoa`) REFERENCES `hoa` (`MaHoa`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_chitiethd_hoadon` FOREIGN KEY (`MaHD`) REFERENCES `hoadon` (`MaHD`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `hoa`
---
-ALTER TABLE `hoa`
-  ADD CONSTRAINT `fk_hoa_loaihoa` FOREIGN KEY (`MaLoai`) REFERENCES `loaihoa` (`MaLoai`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `fk_chitiethd_hoadon` FOREIGN KEY (`MaHD`) REFERENCES `hoadon` (`MaHD`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_chitiethd_sach` FOREIGN KEY (`MaSach`) REFERENCES `sach` (`MaSach`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `hoadon`
@@ -204,3 +236,13 @@ ALTER TABLE `hoa`
 ALTER TABLE `hoadon`
   ADD CONSTRAINT `fk_hoadon_khachhang` FOREIGN KEY (`MaKH`) REFERENCES `khachhang` (`MaKH`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
+--
+-- Constraints for table `sach`
+--
+ALTER TABLE `sach`
+  ADD CONSTRAINT `fk_sach_loaiSach` FOREIGN KEY (`MaLoai`) REFERENCES `loaisach` (`MaLoai`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
