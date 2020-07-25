@@ -1,0 +1,86 @@
+#myContainer {
+    
+    border: 0px solid #264F73;
+    /* min-height: 600px; */
+    
+    padding: 0px;
+    margin-left:5px;
+	 margin-right:5px;
+}
+#home{
+	text-decoration:none;
+	color:white;
+	position: absolute;
+    left: 45px;
+}
+#mybanner {
+    height: 80px;
+    position: relative;
+    background-color: #EFF4F5
+}
+#mybanner a {
+    text-decoration: none;
+}
+
+#menunav1 li {
+    float: left;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#menunav1 ul {    
+    list-style-type: none;
+    overflow: hidden;
+    width: 100%;
+}
+#menunav1 a {
+    color: #264F73;
+    font-size: 18;
+}
+#Namebook {
+    color: #BE2623;
+    font-size: 45;
+    left: 70px;
+    position: absolute;
+} 
+#nnp {
+    color: #264F73;
+    font-size: 60;
+}
+
+#menunav {
+    background-color: #264F73;
+    height: 45px;
+    padding: 10x;
+}
+
+input {
+    width: 400px;
+    box-sizing: border-box;
+    border: 1px solid #264F73;
+    outline: none;
+    padding: 12px 14px;
+    height: 33px;
+    color: #264F73;
+    background-color: #EFF4F5;
+}
+#iconSearch {
+    color: #264F73;
+    background-color: #EFF4F5;
+}
+#empty {
+    background-color: #264F73;
+    /* min-height: 550px; */
+    width: 200px;
+    float:left;
+    height: 100%;
+}
+#empty a {
+    color: #F6F5F2
+}
+#fa{
+    position: absolute;
+    top:10px;
+    right: 50px;
+}

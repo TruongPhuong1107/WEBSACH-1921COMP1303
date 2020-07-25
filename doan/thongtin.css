@@ -1,0 +1,40 @@
+.info-form{
+            max-width: 400px;
+            background-color: white;
+			color:black;
+            border: 1.5px solid #264F73; 
+            border-radius: 8px;
+            padding:20px;
+}
+h1{
+            color: #264F73;
+            font-size: 23px;
+            margin-bottom: 30px;
+}
+.add-input{
+            margin-bottom: 15px;
+        }
+        .add-input input{
+            padding: 8px 30px;
+            width: 300px;
+            border: 1px solid #264F73;
+            outline: none;
+            border-radius: 5px;
+            background-color: #EFF4F5
+        }
+        .add-input h2 {
+            color: #264F73;
+            font-size: 15px;
+        }
+        .btn-input{
+            text-align: right;
+            margin-top: 30px;
+        }
+        .btn-input button{
+            padding: 8px 30px;
+            border-radius: 5px;
+            background-color: #9aa1a7;
+            color: #ffffff;
+            border: none;
+            outline: none;
+        }

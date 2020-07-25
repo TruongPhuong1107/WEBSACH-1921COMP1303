@@ -1,0 +1,44 @@
+ .login-form{
+            max-width: 400px;
+            background-color: white;
+			color:black;
+			border: 1.5px solid #264F73;border-radius: 8px;padding:20px
+}
+  .error{
+         color:red;
+         position:absolute;
+         top :50px; 
+         left: 500px;
+      }
+h1{
+            color: #264F73;
+            font-size: 23px;
+            margin-bottom: 30px;
+}
+.input-box{
+            margin-bottom: 15px;
+        }
+        .input-box input{
+            padding: 8px 30px;
+            width: 300px;
+            border: 1px solid #264F73;
+            outline: none;
+            border-radius: 5px;
+            background-color: #EFF4F5
+        }
+        .input-box h2 {
+            color: #264F73;
+            font-size: 15px;
+        }
+        .btn-box{
+            text-align: right;
+            margin-top: 30px;
+        }
+        .btn-box button{
+            padding: 8px 30px;
+            border-radius: 5px;
+            background-color: #264F73;
+            color: #ffffff;
+            border: none;
+            outline: none;
+        }
